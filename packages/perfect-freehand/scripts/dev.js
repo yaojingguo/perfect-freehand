@@ -13,6 +13,7 @@ async function main() {
     format: 'esm',
     target: 'esnext',
     tsconfig: './tsconfig.json',
+    outExtension: { '.js': '.mjs' },
     watch: {
       onRebuild(error) {
         if (error) {
